@@ -1,5 +1,5 @@
 local hb = {}
-local scale = tonumber(core.setting_get("hud_scaling")) or 1
+local scale = tonumber(minetest.settings:get("hud_scaling")) or 1
 
 local function update_wheel(player)
 	local name = player:get_player_name()
